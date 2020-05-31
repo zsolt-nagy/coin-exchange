@@ -1,0 +1,5 @@
+GET https://api.github.com/users/facebook/repos 
+
+###
+
+GET https://comicvine.gamespot.com/api/characters/?api_key=340afe8dcda8eeec5bf1675ae3cdb06a6f565334&format=json&query=deadpool
