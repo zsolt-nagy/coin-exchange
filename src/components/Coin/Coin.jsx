@@ -9,22 +9,34 @@ const Td = styled.td`
 
 export default function Coin(props) {
  
-    const handleClick = (event) => {
+    const handleInfo = (event) => {
         // Prevent the default action of submitting the form 
         event.preventDefault();
 
         props.handleRefresh(props.tickerId); 
     }
+
+    const handleBuy = (event) => {
+        event.preventDefault();
+        props.handleTransaction(true, props.tickerId);
+    }
+
+    const handleSell = (event) => {
+        event.preventDefault();
+        props.handleTransaction(false, props.tickerId);
+    }    
     
     return (
         <tr> 
             <Td>{props.name}</Td>
             <Td>{props.ticker}</Td> 
             <Td>${props.price}</Td>
-            {props.showBalance ? <Td>{props.balance}</Td> : null}
+            <Td>{props.showBalance ? props.balance : '-'}</Td>
             <Td>
                 <form action="#" method="POST">
-                <button onClick={handleClick}>Refresh</button>
+                    <button className="btn btn-info" onClick={handleInfo}>Refresh</button>
+                    <button className="btn btn-success" onClick={handleBuy}>Buy</button>
+                    <button className="btn btn-danger" onClick={handleSell}>Sell</button>
                 </form>
             </Td>
         </tr>

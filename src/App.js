@@ -5,6 +5,14 @@ import ExchangeHeader from './components/ExchangeHeader/ExchangeHeader';
 import styled from 'styled-components';
 import axios from 'axios';
 
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+// https://www.npmjs.com/package/bootswatch
+import "bootswatch/dist/spacelab/bootstrap.min.css"; 
+
+// npm install @fortawesome/fontawesome-free --save
+import "@fortawesome/fontawesome-free/js/all";
+
 const Div = styled.div`
   text-align: center;
   background-color: rgb(20, 56, 97);
@@ -49,6 +57,23 @@ function App(props) {
     setShowBalance(oldValue => !oldValue);
   }
 
+  const handleBrrrr = () => {
+    setBalance( oldBalance => oldBalance + 1200 );
+  }
+
+  const handleTransaction = (isBuy, valueChangeId) => { 
+    const balanceChange = isBuy ? 1 : -1;
+    const newCoinData = coinData.map( function( values ) {
+      let newValues = { ...values };
+      if ( valueChangeId === values.key ) {
+        newValues.balance += balanceChange;
+        setBalance( oldBalance => oldBalance - balanceChange * newValues.price );
+      }
+      return newValues;
+    });    
+    setCoinData(newCoinData);
+  }
+
   const handleRefresh = async (valueChangeId) => {
     const tickerUrl = `https://api.coinpaprika.com/v1/tickers/${valueChangeId}`;
     const response = await axios.get(tickerUrl);
@@ -71,10 +96,12 @@ function App(props) {
       <AccountBalance 
         amount={balance} 
         showBalance={showBalance} 
+        handleBrrrr={handleBrrrr}
         handleBalanceVisibilityChange={handleBalanceVisibilityChange} />
       <CoinList 
         coinData={coinData} 
-        showBalance={showBalance}
+        showBalance={showBalance} 
+        handleTransaction={handleTransaction}
         handleRefresh={handleRefresh} />
     </Div>
   );

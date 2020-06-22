@@ -9,7 +9,7 @@ const Img = styled.img`
 
 const Header = styled.header`
     background-color: #282c34;
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,7 +18,10 @@ const Header = styled.header`
 `;
 
 const H1 = styled.h1`
-    font-size: 4rem;
+    font-size: 2rem;
+    line-height: 8rem;
+    color: white;
+    font-weight: bold;
 `;
 
 export default class ExchangeHeader extends Component {
