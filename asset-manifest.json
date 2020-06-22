@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/coin-exchange/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/coin-exchange/static/js/main.39b3ebec.chunk.js",
-    "main.js.map": "/coin-exchange/static/js/main.39b3ebec.chunk.js.map",
+    "main.js": "/coin-exchange/static/js/main.ac25df34.chunk.js",
+    "main.js.map": "/coin-exchange/static/js/main.ac25df34.chunk.js.map",
     "runtime-main.js": "/coin-exchange/static/js/runtime-main.075daf70.js",
     "runtime-main.js.map": "/coin-exchange/static/js/runtime-main.075daf70.js.map",
-    "static/js/2.29c2c344.chunk.js": "/coin-exchange/static/js/2.29c2c344.chunk.js",
-    "static/js/2.29c2c344.chunk.js.map": "/coin-exchange/static/js/2.29c2c344.chunk.js.map",
+    "static/css/2.ea9217f3.chunk.css": "/coin-exchange/static/css/2.ea9217f3.chunk.css",
+    "static/js/2.453bf511.chunk.js": "/coin-exchange/static/js/2.453bf511.chunk.js",
+    "static/js/2.453bf511.chunk.js.map": "/coin-exchange/static/js/2.453bf511.chunk.js.map",
     "index.html": "/coin-exchange/index.html",
-    "precache-manifest.80fbb4a9d4e62aeece0b748b64feff29.js": "/coin-exchange/precache-manifest.80fbb4a9d4e62aeece0b748b64feff29.js",
+    "precache-manifest.76050980e76a071de81139cda2b49a98.js": "/coin-exchange/precache-manifest.76050980e76a071de81139cda2b49a98.js",
     "service-worker.js": "/coin-exchange/service-worker.js",
+    "static/css/2.ea9217f3.chunk.css.map": "/coin-exchange/static/css/2.ea9217f3.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/coin-exchange/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.29c2c344.chunk.js.LICENSE.txt": "/coin-exchange/static/js/2.29c2c344.chunk.js.LICENSE.txt",
+    "static/js/2.453bf511.chunk.js.LICENSE.txt": "/coin-exchange/static/js/2.453bf511.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/coin-exchange/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.075daf70.js",
-    "static/js/2.29c2c344.chunk.js",
+    "static/css/2.ea9217f3.chunk.css",
+    "static/js/2.453bf511.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.39b3ebec.chunk.js"
+    "static/js/main.ac25df34.chunk.js"
   ]
 }
