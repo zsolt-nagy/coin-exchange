@@ -7,14 +7,14 @@ const Td = styled.td`
     width: 22vh;
 `;
 
-const TdControls = styled.td`
+const TdControls = styled(Td)`
     width: 34vh;
 `;
 
 const Button = styled.button`
     font-size: 11px;
     width: 64px;
-    margin: 0 5px;
+    margin: 3px 5px 0;
 `;
 
 export default function Coin(props) {
