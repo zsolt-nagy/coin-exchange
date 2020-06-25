@@ -4,7 +4,17 @@ import styled from 'styled-components';
 
 const Td = styled.td`
     border: 1px solid #cccccc;
-    width: 25vh;
+    width: 22vh;
+`;
+
+const TdControls = styled.td`
+    width: 34vh;
+`;
+
+const Button = styled.button`
+    font-size: 11px;
+    width: 64px;
+    margin: 0 5px;
 `;
 
 export default function Coin(props) {
@@ -32,13 +42,13 @@ export default function Coin(props) {
             <Td>{props.ticker}</Td> 
             <Td>${props.price}</Td>
             <Td>{props.showBalance ? props.balance : '-'}</Td>
-            <Td>
+            <TdControls>
                 <form action="#" method="POST">
-                    <button className="btn btn-info" onClick={handleInfo}>Refresh</button>
-                    <button className="btn btn-success" onClick={handleBuy}>Buy</button>
-                    <button className="btn btn-danger" onClick={handleSell}>Sell</button>
+                    <Button className="btn btn-info" onClick={handleInfo}>Refresh</Button>
+                    <Button className="btn btn-success" onClick={handleBuy}>Buy</Button>
+                    <Button className="btn btn-danger" onClick={handleSell}>Sell</Button>
                 </form>
-            </Td>
+            </TdControls>
         </tr>
         );
 

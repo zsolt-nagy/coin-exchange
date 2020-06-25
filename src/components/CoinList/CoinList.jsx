@@ -13,8 +13,8 @@ const Container = styled.div`
 export default function CoinList(props) {
   return (
     <Container>
-      <Table className="table table-dark table-hover table-striped table-bordered">
-      <thead className="thead-dark">
+      <Table className="table table-primary table-bordered">
+      <thead className="thead-primary">
         <tr>
           <th>Name</th>
           <th>Ticker</th>

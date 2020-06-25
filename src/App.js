@@ -8,7 +8,7 @@ import axios from 'axios';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // https://www.npmjs.com/package/bootswatch
-import "bootswatch/dist/spacelab/bootstrap.min.css"; 
+import "bootswatch/dist/flatly/bootstrap.min.css"; 
 
 // npm install @fortawesome/fontawesome-free --save
 import "@fortawesome/fontawesome-free/js/all";
@@ -24,7 +24,7 @@ const formatPrice = price => parseFloat(Number(price).toFixed(4));
 
 function App(props) {
   const [balance, setBalance] = useState(10000);
-  const [showBalance, setShowBalance] = useState(true);
+  const [showBalance, setShowBalance] = useState(false);
   const [coinData, setCoinData] = useState([]);
 
   const componentDidMount = async () => {
